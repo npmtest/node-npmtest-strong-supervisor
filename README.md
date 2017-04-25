@@ -1,6 +1,6 @@
 # npmtest-strong-supervisor
 
-#### test coverage for  [strong-supervisor (v6.1.1)](https://github.com/strongloop/strong-supervisor)  [![npm package](https://img.shields.io/npm/v/npmtest-strong-supervisor.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-strong-supervisor) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-strong-supervisor.svg)](https://travis-ci.org/npmtest/node-npmtest-strong-supervisor)
+#### basic test coverage for  [strong-supervisor (v6.1.2)](https://github.com/strongloop/strong-supervisor)  [![npm package](https://img.shields.io/npm/v/npmtest-strong-supervisor.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-strong-supervisor) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-strong-supervisor.svg)](https://travis-ci.org/npmtest/node-npmtest-strong-supervisor)
 
 #### supervisor and monitor for node.js applications
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-strong-supervisor/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-strong-supervisor/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-strong-supervisor/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-strong-supervisor/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-strong-supervisor/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-strong-supervisor/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-strong-supervisor/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-strong-supervisor/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-strong-supervisor/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-strong-supervisor/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-strong-supervisor/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-strong-supervisor/build/coverage.html/index.html)
 
@@ -48,7 +48,7 @@
         "url": "https://github.com/strongloop/strong-supervisor/issues"
     },
     "dependencies": {
-        "appmetrics": "^1.1.0",
+        "appmetrics": "^2.0.1",
         "appmetrics-dash": "^3.0.0",
         "async": "^2.0.0",
         "debug": "^2.0.0",
@@ -79,13 +79,13 @@
     },
     "directories": {},
     "dist": {
-        "shasum": "7a64583b182e5e91ff03d9bc91618fbfa07fd4af",
-        "tarball": "https://registry.npmjs.org/strong-supervisor/-/strong-supervisor-6.1.1.tgz"
+        "shasum": "1733a5ddeee00d190397112fe867e9b1e68f2c11",
+        "tarball": "https://registry.npmjs.org/strong-supervisor/-/strong-supervisor-6.1.2.tgz"
     },
     "engines": {
         "node": ">=4"
     },
-    "gitHead": "c8202dcf9903613d234c6cda1ce8f87fa72e5852",
+    "gitHead": "6c4fa3e902774ff7f5e2b1e58dadfbd41674fa63",
     "homepage": "https://github.com/strongloop/strong-supervisor",
     "keywords": [
         "agent",
@@ -183,7 +183,7 @@
         "pretest": "eslint ./",
         "test": "tap --timeout 300 test/test-*.js"
     },
-    "version": "6.1.1"
+    "version": "6.1.2"
 }
 ```
 
