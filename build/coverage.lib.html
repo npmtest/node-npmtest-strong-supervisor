@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for node-npmtest-strong-supervisor/node_modules/strong-supervisor/lib/debugger.js</title>
+    <title>Code coverage report for node-npmtest-strong-supervisor/node_modules/strong-supervisor/bin/sl-runctl.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -190,27 +190,27 @@
     </style>
 </head>
 <body>
-<div class="header high">
+<div class="header low">
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-strong-supervisor">npmtest-strong-supervisor (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-strong-supervisor/node_modules/strong-supervisor/lib/debugger.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-strong-supervisor/node_modules/strong-supervisor/bin/sl-runctl.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">100% <small>(5 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">33.33% <small>(58 / 174)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">11.11% <small>(5 / 45)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">8.11% <small>(3 / 37)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">100% <small>(5 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">33.53% <small>(58 / 173)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-strong-supervisor/node_modules/strong-supervisor/lib/</a> &#187; debugger.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-strong-supervisor/node_modules/strong-supervisor/bin/</a> &#187; sl-runctl.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
@@ -229,7 +229,372 @@
 13
 14
 15
-16</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -238,32 +603,624 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Copyright IBM Corp. 2015,2016. All Rights Reserved.
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">//#!/usr/bin/env node
+// Copyright IBM Corp. 2014,2016. All Rights Reserved.
 // Node module: strong-supervisor
 // This file is licensed under the Artistic License 2.0.
 // License text available at https://opensource.org/licenses/Artistic-2.0
 &nbsp;
+/* eslint no-process-exit:0 */
+&nbsp;
 'use strict';
 &nbsp;
-var debug = require('./debug')('debugger');
-try {
-  module.exports = require('strong-debugger');
-} catch (err) {
-  debug('Cannot load strong-debugger: %s', err.message);
-  module.exports = null;
+// Exit on loss of parent process, if it had established an ipc control channel.
+// We do this ASAP because we don't want child processes to leak, outliving
+// their parent. If the parent has not established an 'ipc' channel to us, this
+// will be a no-op, the disconnect event will never occur.
+process.on('disconnect', <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >  process.exit(2);</span>
+});
+&nbsp;
+var argv = process.argv;
+var client = require('strong-control-channel/client');
+var debug = require('../lib/debug')('runctl');
+var fs = require('fs');
+var npmls = require('strong-npm-ls');
+var Parser = require('posix-getopt').BasicParser;
+var path = require('path');
+var util = require('util');
+var version = require('../package.json').version;
+&nbsp;
+var $0 = process.env.CMD ? <span class="branch-0 cbranch-no" title="branch not covered" >process.env.CMD </span>: path.basename(argv[1]);
+var ADDR = 'runctl';
+&nbsp;
+function error() {
+  console.error.apply(console, arguments);
+  process.exit(1);
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function okay() {</span>
+<span class="cstat-no" title="statement not covered" >  console.log('OK');</span>
+<span class="cstat-no" title="statement not covered" >  process.exit(0);</span>
+}
+&nbsp;
+var HELP = fs.readFileSync(require.resolve('./sl-runctl.txt'), 'utf-8')
+  .replace(/%MAIN%/g, $0)
+  .replace(/%ADDR%/g, ADDR);
+&nbsp;
+var parser = new Parser([
+  ':v(version)',
+  'h(help)',
+  'p:(path)',
+  'p:(port)',
+  'C:(control)',
+].join(''), argv);
+&nbsp;
+var option;
+while ((option = parser.getopt()) !== undefined) {
+<span class="cstat-no" title="statement not covered" >  switch (option.option) {</span>
+    case 'v':
+<span class="cstat-no" title="statement not covered" >      console.log(version);</span>
+<span class="cstat-no" title="statement not covered" >      process.exit(0);</span>
+<span class="cstat-no" title="statement not covered" >      break;</span>
+    case 'h':
+<span class="cstat-no" title="statement not covered" >      console.log(HELP);</span>
+<span class="cstat-no" title="statement not covered" >      process.exit(0);</span>
+<span class="cstat-no" title="statement not covered" >      break;</span>
+    case 'p':
+    case 'C':
+<span class="cstat-no" title="statement not covered" >      ADDR = option.optarg;</span>
+<span class="cstat-no" title="statement not covered" >      break;</span>
+    default:
+<span class="cstat-no" title="statement not covered" >      error('Invalid usage (near option \'%s\'), try `%s --help`.',</span>
+        option.optopt, $0);
+  }
+}
+&nbsp;
+var optind = parser.optind();
+var command = argv[optind++] || 'status';
+var request = {}; // {cmd: , ...}: request to send
+var display = okay; // override for command specific success message
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requiredArg() {</span>
+<span class="cstat-no" title="statement not covered" >  var arg = argv[optind++];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (arg != null) <span class="cstat-no" title="statement not covered" >return arg;</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  error('Invalid usage, missing argument for `%s`, try `%s --help`.',</span>
+        command, $0);
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function optionalArg(default_) {</span>
+<span class="cstat-no" title="statement not covered" >  var arg = argv[optind++];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return arg == null ? default_ : arg;</span>
+}
+&nbsp;
+var commands = {
+  status: requestStatus,
+  'set-size': requestSetSize,
+  stop: requestStop,
+  restart: requestRestart,
+  ls: requestLs,
+  disconnect: requestDisconnect,
+  fork: requestFork,
+  'objects-start': requestObjectsStart,
+  'objects-stop': requestObjectsStop,
+  'cpu-start': requestCpuStart,
+  'cpu-stop': requestCpuStop,
+  'heap-snapshot': requestHeapSnapshot,
+  patch: requestPatch,
+  'env-get': requestEnvGet,
+  'env-set': requestEnvSet,
+  'env-unset': requestEnvUnSet,
+  'dbg-start': requestDebuggerStart,
+  'dbg-stop': requestDebuggerStop,
+  'dbg-status': requestDebuggerStatus,
+};
+&nbsp;
+var action = commands[command] || <span class="branch-1 cbranch-no" title="branch not covered" >invalidCommand;</span>
+&nbsp;
+action();
+&nbsp;
+<span class="fstat-no" title="function not covered" >function invalidCommand() {</span>
+<span class="cstat-no" title="statement not covered" >  error('Invalid command `%s`, try `%s --help`.', command, $0);</span>
+}
+&nbsp;
+function requestStatus() {
+  request.cmd = 'status';
+  display = displayStatusResponse;
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function displayStatusResponse(rsp) {</span>
+<span class="cstat-no" title="statement not covered" >  if (rsp.master) {</span>
+<span class="cstat-no" title="statement not covered" >    console.log('master pid: %d', rsp.master.pid);</span>
+  }
+<span class="cstat-no" title="statement not covered" >  console.log('worker count:', rsp.workers.length);</span>
+<span class="cstat-no" title="statement not covered" >  for (var i = 0; i &lt; rsp.workers.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >    var worker = rsp.workers[i];</span>
+<span class="cstat-no" title="statement not covered" >    var id = worker.id;</span>
+<span class="cstat-no" title="statement not covered" >    delete worker.id;</span>
+<span class="cstat-no" title="statement not covered" >    console.log('worker id', id + ':', worker);</span>
+  }
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestSetSize() {</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'set-size';</span>
+<span class="cstat-no" title="statement not covered" >  request.size = requiredArg();</span>
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestStop() {</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'stop';</span>
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestRestart() {</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'restart';</span>
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestLs() {</span>
+<span class="cstat-no" title="statement not covered" >  var depth = +optionalArg(Number.MAX_VALUE);</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'npm-ls';</span>
+<span class="cstat-no" title="statement not covered" >  request.depth = depth;</span>
+<span class="cstat-no" title="statement not covered" >  display = <span class="fstat-no" title="function not covered" >function displayLsResponse(rsp) {</span></span>
+<span class="cstat-no" title="statement not covered" >    console.log(npmls.printable(rsp, depth));</span>
+  };
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestDisconnect() {</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'disconnect';</span>
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestFork() {</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'fork';</span>
+<span class="cstat-no" title="statement not covered" >  display = console.log;</span>
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestObjectsStart() {</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'start-tracking-objects';</span>
+<span class="cstat-no" title="statement not covered" >  request.target = requiredArg();</span>
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestObjectsStop() {</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'stop-tracking-objects';</span>
+<span class="cstat-no" title="statement not covered" >  request.target = requiredArg();</span>
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestCpuStart() {</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'start-cpu-profiling';</span>
+<span class="cstat-no" title="statement not covered" >  request.target = requiredArg();</span>
+<span class="cstat-no" title="statement not covered" >  request.timeout = optionalArg(0) | 0;</span>
+<span class="cstat-no" title="statement not covered" >  request.stallout = optionalArg(0) | 0;</span>
+<span class="cstat-no" title="statement not covered" >  display = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >    console.log('Profiler started, use cpu-stop to get profile.');</span>
+  };
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestCpuStop() {</span>
+<span class="cstat-no" title="statement not covered" >  var target = requiredArg();</span>
+<span class="cstat-no" title="statement not covered" >  var name = optionalArg(util.format('node.%s', target));</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'stop-cpu-profiling';</span>
+<span class="cstat-no" title="statement not covered" >  request.target = target;</span>
+  // .cpuprofile extention Required by Chrome
+<span class="cstat-no" title="statement not covered" >  var filePath = path.resolve(name + '.cpuprofile');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  display = <span class="fstat-no" title="function not covered" >function(res) {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (!res.error) {</span>
+<span class="cstat-no" title="statement not covered" >      try {</span>
+<span class="cstat-no" title="statement not covered" >        fs.writeFileSync(filePath, res.profile);</span>
+      } catch (err) {
+<span class="cstat-no" title="statement not covered" >        res.error = err.message;</span>
+      }
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (res.error) {</span>
+<span class="cstat-no" title="statement not covered" >      error('Unable to write CPU profile to `%s`: %s', filePath, res.error);</span>
+<span class="cstat-no" title="statement not covered" >      return;</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    console.log('CPU profile written to `%s`, load into Chrome Dev Tools',</span>
+      filePath);
+  };
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestHeapSnapshot() {</span>
+<span class="cstat-no" title="statement not covered" >  var target = requiredArg();</span>
+<span class="cstat-no" title="statement not covered" >  var name = optionalArg(util.format('node.%s', target));</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'heap-snapshot';</span>
+<span class="cstat-no" title="statement not covered" >  request.target = target;</span>
+<span class="cstat-no" title="statement not covered" >  var filePath = path.resolve(name + '.heapsnapshot');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  display = <span class="fstat-no" title="function not covered" >function(res) {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (!res.error) {</span>
+<span class="cstat-no" title="statement not covered" >      try {</span>
+<span class="cstat-no" title="statement not covered" >        fs.writeFileSync(filePath, res.profile);</span>
+      } catch (err) {
+<span class="cstat-no" title="statement not covered" >        res.error = err.message;</span>
+      }
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (res.error) {</span>
+<span class="cstat-no" title="statement not covered" >      error('Unable to write heap to `%s`: %s', filePath, res.error);</span>
+<span class="cstat-no" title="statement not covered" >      return;</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    console.log('Heap written to `%s`, load into Chrome Dev Tools',</span>
+      filePath);
+  };
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestPatch() {</span>
+<span class="cstat-no" title="statement not covered" >  var target = requiredArg();</span>
+<span class="cstat-no" title="statement not covered" >  var file = requiredArg();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'patch';</span>
+<span class="cstat-no" title="statement not covered" >  request.target = target;</span>
+<span class="cstat-no" title="statement not covered" >  request.patch = JSON.parse(fs.readFileSync(file));</span>
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestEnvGet() {</span>
+<span class="cstat-no" title="statement not covered" >  request.target = optionalArg(0) | 0;</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'env-get';</span>
+<span class="cstat-no" title="statement not covered" >  display = <span class="fstat-no" title="function not covered" >function dumpEnv(rsp) {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (rsp.error || !rsp.env) {</span>
+<span class="cstat-no" title="statement not covered" >      console.error('Unable to get env:', rsp.error || 'unknown');</span>
+    } else {
+<span class="cstat-no" title="statement not covered" >      Object.keys(rsp.env).sort().forEach(<span class="fstat-no" title="function not covered" >function(k) {</span></span>
+<span class="cstat-no" title="statement not covered" >        console.log('%s=%s', k, rsp.env[k]);</span>
+      });
+    }
+  };
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestEnvSet() {</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'env-set';</span>
+<span class="cstat-no" title="statement not covered" >  request.env = {};</span>
+<span class="cstat-no" title="statement not covered" >  argv.slice(optind++).forEach(<span class="fstat-no" title="function not covered" >function(kv) {</span></span>
+<span class="cstat-no" title="statement not covered" >    var pair = kv.split('=').map(<span class="fstat-no" title="function not covered" >function(p) {</span></span>
+<span class="cstat-no" title="statement not covered" >      return p.trim();</span>
+    });
+<span class="cstat-no" title="statement not covered" >    if (pair[0]) {</span>
+<span class="cstat-no" title="statement not covered" >      request.env[pair[0]] = pair[1];</span>
+    }
+  });
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestEnvUnSet() {</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'env-unset';</span>
+<span class="cstat-no" title="statement not covered" >  request.env = argv.slice(optind++);</span>
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestDebuggerStart() {</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'dbg-start';</span>
+<span class="cstat-no" title="statement not covered" >  request.target = requiredArg();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  display = <span class="fstat-no" title="function not covered" >function debuggerStarted(rsp) {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (rsp.error || !rsp.port) {</span>
+<span class="cstat-no" title="statement not covered" >      console.error('Unable to start the debugger:', rsp.error || 'unknown');</span>
+    } else {
+<span class="cstat-no" title="statement not covered" >      console.log('Debugger listening on port %s', rsp.port);</span>
+    }
+  };
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestDebuggerStop() {</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'dbg-stop';</span>
+<span class="cstat-no" title="statement not covered" >  request.target = requiredArg();</span>
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function requestDebuggerStatus() {</span>
+<span class="cstat-no" title="statement not covered" >  request.cmd = 'dbg-status';</span>
+<span class="cstat-no" title="statement not covered" >  request.target = requiredArg();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  display = <span class="fstat-no" title="function not covered" >function printDebuggerStatus(rsp) {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (rsp.status.running) {</span>
+<span class="cstat-no" title="statement not covered" >      console.log('Debugger listening on port %s', rsp.status.port);</span>
+    } else {
+<span class="cstat-no" title="statement not covered" >      console.log('Debugger is disabled.');</span>
+    }
+  };
+}
+&nbsp;
+debug('addr: %j, request: %j', ADDR, request);
+&nbsp;
+client.request(ADDR, request, response);
+&nbsp;
+function response(er, rsp) {
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (er) {
+    error('Communication error (%s), check master is listening', er.message);
+  }
+&nbsp;
+  if (rsp.error) {
+<span class="cstat-no" title="statement not covered" >    error('Command %s failed with: %s', request.cmd, rsp.error);</span>
+  }
+<span class="cstat-no" title="statement not covered" >  display(rsp);</span>
+<span class="cstat-no" title="statement not covered" >  process.exit(0);</span>
 }
 &nbsp;
 &nbsp;</pre></td></tr>
 </table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 09:07:48 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 25 2017 05:47:20 GMT+0000 (UTC)</div>
 </div>
 </body>
 </html>
